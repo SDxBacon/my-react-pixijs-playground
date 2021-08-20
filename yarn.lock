@@ -5858,6 +5858,11 @@ immer@8.0.1:
   resolved "https://registry.yarnpkg.com/immer/-/immer-8.0.1.tgz#9c73db683e2b3975c424fb0572af5889877ae656"
   integrity sha512-aqXhGP7//Gui2+UrEtvxZxSquQVXTpZ7KDxfCcKAF3Vysvw0CViVaW9RZ1j1xlIYqaaaipBoqdqeibkc18PNvA==
 
+immer@^9.0.5:
+  version "9.0.5"
+  resolved "https://registry.yarnpkg.com/immer/-/immer-9.0.5.tgz#a7154f34fe7064f15f00554cc94c66cc0bf453ec"
+  integrity sha512-2WuIehr2y4lmYz9gaQzetPR2ECniCifk4ORaQbU3g5EalLt+0IVTosEPJ5BoYl/75ky2mivzdRzV8wWgQGOSYQ==
+
 import-cwd@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/import-cwd/-/import-cwd-2.1.0.tgz#aa6cf36e722761285cb371ec6519f53e2435b0a9"
@@ -8208,6 +8213,11 @@ pirates@^4.0.1:
   dependencies:
     node-modules-regexp "^1.0.0"
 
+pixi-projection@^0.4.2:
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/pixi-projection/-/pixi-projection-0.4.2.tgz#97de53528010905a861a4457b0ffa24b21848fbd"
+  integrity sha512-Ugif70HqXX3ZHcYVTuV5pi7jkyaAgli9/cr/f9Buwh6J2KZMlABYsYaObv7yq7VcZn+SVHLra0NFCPu1tusyAg==
+
 pixi.js@^6.1.1:
   version "6.1.1"
   resolved "https://registry.yarnpkg.com/pixi.js/-/pixi.js-6.1.1.tgz#28bc7687821c221e8f543ae89bc890e7d294d023"
@@ -8248,6 +8258,11 @@ pixi.js@^6.1.1:
     "@pixi/text-bitmap" "6.1.1"
     "@pixi/ticker" "6.1.1"
     "@pixi/utils" "6.1.1"
+
+pixi3d@^0.9.7:
+  version "0.9.7"
+  resolved "https://registry.yarnpkg.com/pixi3d/-/pixi3d-0.9.7.tgz#5860a6d0924d942ef154fe1ba1dca8bbbc1ba603"
+  integrity sha512-wMAMV3fkL8k/d7scx3UUn51TTykERd0n2rCw5qKo3UuVYCCmIfz1Gdd++sSOpLVx+M2Oo9AtPlkiwCEux/60kw==
 
 pkg-dir@^2.0.0:
   version "2.0.0"

@@ -20,7 +20,7 @@ const CardFireSprite = () => {
   t.frame = new Rectangle(0, 0, 150, 204);
   const [texture, setTexture] = useState(t);
 
-  useTick(() => {
+  useTick((delta) => {
     // increase counter
     count.current = (count.current + 1) % FRAMES_SETTING.totalFrames;
 

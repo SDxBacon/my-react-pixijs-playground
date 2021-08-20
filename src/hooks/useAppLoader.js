@@ -12,6 +12,15 @@ const useAppLoader = () => {
     if (!isLoaded) {
       app.loader
         .add("jetFighter", JET_SPRITE_SHEET)
+        .add("star", `${process.env.PUBLIC_URL}/images/star.png`)
+        .add(
+          "waterbottle",
+          `${process.env.PUBLIC_URL}/assets/waterbottle/waterbottle.gltf`
+        )
+        .add(
+          "starConflict",
+          `${process.env.PUBLIC_URL}/assets/star_conflict/scene.gltf`
+        )
         .add("cardFire", `${process.env.PUBLIC_URL}/active-fire-sprite.png`)
         .add("town_grass", `${process.env.PUBLIC_URL}/assets/town/grass.png`)
         .load(() => {
