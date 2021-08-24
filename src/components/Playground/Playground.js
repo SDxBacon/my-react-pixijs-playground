@@ -1,7 +1,7 @@
 import useAppLoader from "hooks/useAppLoader";
 
-const Playground = ({ children }) => {
-  const isLoaded = useAppLoader();
+const Playground = ({ assets, children }) => {
+  const isLoaded = useAppLoader(assets);
 
   if (!isLoaded) return null;
 

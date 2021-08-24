@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Stage } from "@inlet/react-pixi";
 import Playground from "../Playground";
 
-const CommonStageComp = ({ children }) => {
+const CommonStageComp = ({ assets, children }) => {
   const [size, setSize] = useState({
     width: window.innerWidth,
     height: window.innerHeight,
@@ -30,7 +30,7 @@ const CommonStageComp = ({ children }) => {
         antialias: true,
       }}
     >
-      <Playground>{children}</Playground>
+      <Playground assets={assets}>{children}</Playground>
     </Stage>
   );
 };
