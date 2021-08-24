@@ -1,4 +1,5 @@
 import useAppLoader from "hooks/useAppLoader";
+import Town from "components/Town";
 import CardFireSprite from "components/CardFireSprite";
 
 const Playground = () => {
@@ -8,7 +9,8 @@ const Playground = () => {
 
   return (
     <>
-      <CardFireSprite />
+      <Town />
+      {/* <CardFireSprite /> */}
     </>
   );
 };

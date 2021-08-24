@@ -13,6 +13,7 @@ const useAppLoader = () => {
       app.loader
         .add("jetFighter", JET_SPRITE_SHEET)
         .add("cardFire", `${process.env.PUBLIC_URL}/active-fire-sprite.png`)
+        .add("town_grass", `${process.env.PUBLIC_URL}/assets/town/grass.png`)
         .load(() => {
           setIsLoaded(true);
         });
