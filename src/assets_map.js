@@ -22,7 +22,31 @@ export const CARD_FIRE_ASSETS = [
  */
 export const TOWN_ASSETS = [
   {
-    key: "town_grass",
-    url: `${process.env.PUBLIC_URL}/assets/town/grass.png`,
+    key: "Grass",
+    url: `${process.env.PUBLIC_URL}/assets/town/Grass.png`,
+  },
+  {
+    key: "Plant",
+    url: `${process.env.PUBLIC_URL}/assets/town/Plant.png`,
+  },
+  {
+    key: "PlantShadow",
+    url: `${process.env.PUBLIC_URL}/assets/town/PlantShadow.png`,
+  },
+  {
+    key: "Props",
+    url: `${process.env.PUBLIC_URL}/assets/town/Props.png`,
+  },
+  {
+    key: "Shadow",
+    url: `${process.env.PUBLIC_URL}/assets/town/Shadow.png`,
+  },
+  {
+    key: "Struct",
+    url: `${process.env.PUBLIC_URL}/assets/town/Struct.png`,
+  },
+  {
+    key: "Wall",
+    url: `${process.env.PUBLIC_URL}/assets/town/Wall.png`,
   },
 ];

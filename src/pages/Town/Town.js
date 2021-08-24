@@ -1,11 +1,11 @@
 import { TOWN_ASSETS } from "assets_map";
 import Stage from "components/Stage";
-import GrassSprite from "./components/GrassSprite";
+import Background from "./containers/Background";
 
 const Town = () => {
   return (
     <Stage assets={TOWN_ASSETS}>
-      <GrassSprite />
+      <Background />
     </Stage>
   );
 };
