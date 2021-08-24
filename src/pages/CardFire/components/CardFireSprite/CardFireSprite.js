@@ -3,12 +3,11 @@ import { Rectangle } from "pixi.js";
 import { useApp, useTick, Sprite, Container } from "@inlet/react-pixi";
 
 const FRAMES_SETTING = {
-  totalFrames: 15,
-  frameWidth: 150,
-  frameHeight: 204,
+  totalFrames: 60,
+  framesInRow: 15,
+  frameWidth: 271,
+  frameHeight: 440,
 };
-
-const FRAME_WIDTH = 150;
 
 /**
  * CardFireSprite component
@@ -24,9 +23,15 @@ const CardFireSprite = () => {
     // increase counter
     count.current = (count.current + 1) % FRAMES_SETTING.totalFrames;
 
+    const x =
+      (count.current % FRAMES_SETTING.framesInRow) * FRAMES_SETTING.frameWidth;
+    const y =
+      Math.floor(count.current / FRAMES_SETTING.framesInRow) *
+      FRAMES_SETTING.frameHeight;
+
     const rect = new Rectangle(
-      FRAMES_SETTING.frameWidth * count.current,
-      0,
+      x,
+      y,
       FRAMES_SETTING.frameWidth,
       FRAMES_SETTING.frameHeight
     );
@@ -38,7 +43,8 @@ const CardFireSprite = () => {
     <Container
       x={app.renderer.view.width / 2}
       y={app.renderer.view.height / 2}
-      width={FRAME_WIDTH}
+      width={FRAMES_SETTING.frameWidth}
+      height={FRAMES_SETTING.frameHeight}
     >
       <Sprite texture={texture} anchor={0.5} />
     </Container>
